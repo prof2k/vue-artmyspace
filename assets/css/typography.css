@@ -1,0 +1,39 @@
+body {
+    font-family: josefin sans;
+}
+
+p, 
+blockquote {
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 44em;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Laila';
+}
+
+section {
+    font-size: 140%;
+}
+
+
+/* Media queries ==================================== */
+@media (max-width: 768px) {
+    body {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 70%;
+    }
+}
+
+

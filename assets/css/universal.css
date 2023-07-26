@@ -1,0 +1,250 @@
+:root {
+    scroll-behavior: smooth;
+    --theme-color: #65be28;
+}
+
+body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-X: hidden;
+}
+
+/* Universal ==================================== */
+
+.container {
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.bigger {
+    width: 90%;
+}
+
+.flx-cntr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.flx-dir-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.flx-dir-r-r {
+    flex-direction: row-reverse;
+}
+
+.flx-jst-c {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.flx-jst-spc-btw {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.flx-jst-spc-arnd {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.flx-algn-c {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.flx-algn-strh {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+
+.flx-algn-strt {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.flx-col-2 > div {
+    flex-basis: 45%;
+    min-width: 510px;
+    /* justify-self: space-between; */
+    margin-bottom: 1em;
+    box-sizing: border-box ;
+}
+
+.flx-col-3 > div {
+    flex-basis: 30%;
+    min-width: 300px;
+    margin: .5em;
+    margin-bottom: 1em;
+}
+
+.align-on-break {
+    flex-direction: 2px;
+}
+
+.tac {
+    text-align: center;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.clr-sec-clr {
+    color: var(--theme-color);
+}
+
+.fill-text-clr {
+    fill: #fff;
+}
+
+.mrgn-aut {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mrgn-t-0 {
+    margin-top: 0;
+}
+
+section {
+    padding-top: 4em;
+}
+
+blockquote {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Extended for Art My Space */
+.in-flx-grw-1 > * {
+    flex-grow: 1;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1em;
+    transition: all ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.full-height {
+    min-height: 100vh;
+    transform: scale(1);
+}
+
+a {
+    color: inherit;
+    transition: all ease-in-out 200ms;
+}
+
+@supports((background-clip: text) or (-webkit-background-clip: text)) {
+    a {
+        /* background: linear-gradient(to right, #ff6600 -5%, #9900cc, #0078ba, #669933 105%); */
+        /* color: transparent; */
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* text-decoration: underline red; */
+    }
+}
+
+.call-to-action {
+    font-size: 1.1em;
+    margin: 1em 0;
+    display: inline-block;
+    position: relative;
+    padding: .5em 1.5em;
+    background: teal;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 2em;
+    z-index: 1;
+}
+
+.call-to-action::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: #fff;
+    z-index: -1;
+    border-radius: 2em;
+    transition: inherit;
+    transition-delay: 100ms;
+}
+
+.call-to-action::before {
+    content: "";
+    position: absolute;
+    top: -.2em; bottom: -.2em;
+    left: -.2em; right: -.2em;
+    background: linear-gradient(to right, #ff6600 -5%, #9900cc, #0078ba, #669933 105%);
+    z-index: -1;
+    border-radius: 2em;
+    transition: inherit;
+}
+
+.call-to-action:hover,
+.call-to-action:focus
+ {
+    transform: scale(1.1);
+    outline: 0;
+}
+
+.call-to-action:hover::before,
+.call-to-action:focus::before {
+    filter: hue-rotate(30deg);
+    transform: scale(1.1);
+}
+
+.call-to-action:hover::after,
+.call-to-action:focus::after {
+    transform: scale(1.1);
+}
+
+
+/* Media Queries */
+
+@media(max-width: 1274px) {
+    .flx-col-2 {
+        display: block;
+    }
+
+    .flx-col-2 > div {
+        min-width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .flx-col-3 {
+        display: block;
+    }
+
+    .flx-col-3 > div {
+        min-width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
