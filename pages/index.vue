@@ -130,9 +130,9 @@
             </g>
           </svg>
           <div id="map-images">
-            <img src="imgs/artwork-1.jpg" class="map-img a" alt="">
-            <img src="imgs/artwork-2.jpg" class="map-img b" alt="">
-            <img src="imgs/artwork-3.jpg" class="map-img c" alt="">
+            <img src="/imgs/artwork-1.jpg" class="map-img a" alt="">
+            <img src="/imgs/artwork-2.jpg" class="map-img b" alt="">
+            <img src="/imgs/artwork-3.jpg" class="map-img c" alt="">
           </div>
         </div>
       </div>
@@ -239,13 +239,13 @@
             </div>
             <div class="box">
               <div>
-                <img src="imgs/black-white-pillows.png" alt="Fancy beautiful pillows">
+                <img src="/imgs/black-white-pillows.png" alt="Fancy beautiful pillows">
               </div>
               <span>Black and White throw pillows</span>
             </div>
             <div class="box">
               <div>
-                <img src="imgs/flower-vase.png" alt="fancy ceramic flower vase holding purple and yellow flowers">
+                <img src="/imgs/flower-vase.png" alt="fancy ceramic flower vase holding purple and yellow flowers">
               </div>
               <span>Glass Flower Vases</span>
             </div>
