@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container bigger">
-      <img src="imgs/ams-logo.png" alt="#" width="100" id="logo">
+      <img src="/imgs/ams-logo.png" alt="#" width="100" id="logo">
     </div>
   </header>
 </template>
